@@ -1,0 +1,217 @@
+  html.layout {
+    height: 100%;
+  }
+
+
+  body.layout {
+    height: 100%;
+  }
+  
+  .layout-h1 { 
+    color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 100px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; 
+  }
+
+
+  .layout-h2 { 
+    color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; 
+  }
+  
+  
+  .layout-p { 
+    color: #685206; font-family: 'Helvetica Neue', sans-serif; font-size: 14px; line-height: 24px; margin: 0 0 24px; text-align: justify; text-justify: inter-word; 
+  }
+  
+  .layout-container {
+    border: 2px solid grey;
+    margin: auto;
+    height: 60%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .layout-container2 {
+    border: 2px solid grey;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .layout-img-container {
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .layout-header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .layout-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .layout-menu-toggle {
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .layout-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+
+  .layout-menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .layout-menu li {
+    padding: 10px;
+  }
+  
+  .layout-menu a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .layout-content {
+    padding: 20px;
+  }
+
+  .layout-show-menu {
+    display: block;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+.layout-
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.layout-header{
+  position: sticky;
+  z-index: 30;
+  top: 0;
+}
+.layout-nav{
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+.layout-.nav__menu-bar{
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  cursor: pointer;
+}
+.layout-.nav__menu-bar div{
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+}
+.layout-.nav__menu-list{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  width: 288px;
+  row-gap: 24px;
+  right: -288px;
+  padding: 24px 16px;
+  transition: all 0.2s;
+  min-height: calc(100vh - 60px);
+  background-color: #f1f1f1;
+}
+.layout-.nav__menu-list.active{
+  right: 0;
+}
+.layout-.nav__link{
+  font-size: 18px; 
+  position: relative;
+  transition: all 0.2s;
+}
+
+.layout-.nav__link:hover{
+ font-weight: bold;
+}
+
+.layout-.center{
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .layout-.nav__menu-bar{
+    display: none;
+  }
+  .layout-.nav__menu-list{
+    position: unset;
+    flex-direction: row;
+    min-height: fit-content;
+    width: fit-content;
+    column-gap: 24px;
+    align-items: center;
+  }
+  .layout-.nav__link::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 6px;
+    bottom: -16px;
+    left: 0;
+    background-color: black;
+    transition: all 0.2s;
+  }
+  
+  .layout-.nav__link:hover:before{
+   width: 100%;
+  }
+
+  .centeredList {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    justify-content: center; /* Horizontally center the items */
+    align-items: center; /* Vertically center the items */
+    list-style-type: none; /* Remove default list styles */
+  }
+  
+  .centeredList li {
+    margin: 10px; /* Add margin between list items for spacing */
+    text-align: center; /* Center text within list items */
+  }
+
+  .imgContainer {
+    margin: auto; /* Center the container horizontally */
+    width: fit-content; /* Set container width to fit its content */
+  }
+  
+  .imgContainer img {
+    display: block; /* Ensure the image behaves as a block element */
+    margin: auto; /* Center the image horizontally */
+  }
+  
+  
+}
+  
